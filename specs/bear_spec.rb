@@ -25,10 +25,10 @@ class TestBear < MiniTest::Test
   def test_eat
     @river.add_fish(@fish1)
     @river.add_fish(@fish2)
+    @river.add_fish(@fish3)
     @bear1.eat(@river)
-    @river.remove_fish()
-    assert_equal(1, @bear1.stomach.count)
-    
+    assert_equal(1, @bear1.stomach.length)
+    assert_equal(2, @river.fish_array.length)
   end
 
 end
