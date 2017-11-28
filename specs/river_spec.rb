@@ -34,5 +34,12 @@ class TestRiver < MiniTest::Test
     @river_amazon.remove_fish()
     assert_equal(2, @river_amazon.fish_array.count)
   end
-  
+
+  def test_fish_count
+    @river_amazon.add_fish(@fish1)
+    @river_amazon.add_fish(@fish2)
+    @river_amazon.add_fish(@fish3)
+    assert_equal(3, @river_amazon.fish_count)
+  end
+
 end

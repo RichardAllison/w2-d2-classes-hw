@@ -15,4 +15,8 @@ class River
     @fish_array.pop()
   end
 
+  def fish_count
+    return @fish_array.length
+  end
+
 end
