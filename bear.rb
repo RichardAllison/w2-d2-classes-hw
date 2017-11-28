@@ -12,4 +12,12 @@ class Bear
     @stomach << river.remove_fish()
   end
 
+  def roar
+    return "ROAR!"
+  end
+
+  def food_count
+    return @stomach.length
+  end
+
 end
