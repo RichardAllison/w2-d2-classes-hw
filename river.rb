@@ -11,4 +11,8 @@ class River
     @fish_array << fish
   end
 
+  def remove_fish
+    @fish_array.pop()
+  end
+
 end
