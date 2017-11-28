@@ -15,4 +15,8 @@ class TestBear < MiniTest::Test
     assert_equal("Yogi", @bear1.name)
   end
 
+  def test_stomach_empty
+    assert_equal([], @bear1.stomach)
+  end
+
 end
