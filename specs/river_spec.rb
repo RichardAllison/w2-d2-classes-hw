@@ -16,4 +16,15 @@ class TestRiver < MiniTest::Test
     assert_equal("Amazon", @river_amazon.name)
   end
 
+  def test_river_empty_of_fish
+    assert_equal([], @river_amazon.fish_array)
+  end
+
+  def test_add_fish_to_river
+    @river_amazon.add_fish(@fish1)
+    @river_amazon.add_fish(@fish2)
+    @river_amazon.add_fish(@fish3)
+    assert_equal(3, @river_amazon.fish_array.count)
+  end
+
 end

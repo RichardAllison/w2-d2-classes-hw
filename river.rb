@@ -7,4 +7,8 @@ class River
     @fish_array = []
   end
 
+  def add_fish(fish)
+    @fish_array << fish
+  end
+
 end
